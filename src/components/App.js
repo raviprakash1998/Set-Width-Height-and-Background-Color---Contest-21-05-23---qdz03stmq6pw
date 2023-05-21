@@ -39,7 +39,7 @@ const App = () => {
         <input
           id="width"
           type="number"
-    value="width"
+    value={width}
           onChange={handleWidthChange}
         />
       </div>
@@ -48,7 +48,7 @@ const App = () => {
         <input
           id="height"
           type="number"
-    value="height"
+    value={height}
           onChange={handleHeightChange}
         />
       </div>
@@ -57,7 +57,7 @@ const App = () => {
         <input
           id="backgroundColor"
           type="text"
-          value="backgroundColor"
+          value={backgroundColor}
           onChange={handleBackgroundColorChange}
         />
       </div>
