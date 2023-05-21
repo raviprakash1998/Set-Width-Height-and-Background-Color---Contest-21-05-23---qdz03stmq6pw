@@ -39,6 +39,8 @@ const App = () => {
         <input
           id="width"
           type="number"
+    value="width"
+          onChange={handleWidthChange}
         />
       </div>
       <div>
@@ -46,6 +48,8 @@ const App = () => {
         <input
           id="height"
           type="number"
+    value="height"
+          onChange={handleHeightChange}
         />
       </div>
       <div>
@@ -53,9 +57,11 @@ const App = () => {
         <input
           id="backgroundColor"
           type="text"
+          value="backgroundColor"
+          onChange={handleBackgroundColorChange}
         />
       </div>
-      <button className='create-btn'>Create Box</button>
+      <button onClick={handleCreateBox} className='create-btn'>Create Box</button>
       <div id="box-container">
     {boxes.map((box, index) => (
           <div
